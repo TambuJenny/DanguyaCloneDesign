@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html, body
+{
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+  background: radial-gradient(circle, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 52%, rgba(246,246,246,1) 100%); margin:0;
+  padding: 0;
+  
+}
+.nao
+{
+  text-decoration:line-through ;
+}
+.button-icon
+ {
+   background-color:transparent;
+ }
+p,label
+{
+  font-family: 'Poppins';
+  line-height:1.5em;
+}
+h1,h2,h3,h4,h5,span
+{
+  font-family: 'Oswald';
+ /*font:400 16px 'Bebas Neue'  sans-serif*/ 
+}
+
+.button-icon
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 5vh;
+  width:5vh;
+  border: none;
+  background-color: none;
+  
+}
+.button-left img
+{
+  max-width: auto;
+}
+.imgsneaker
+{
+  height:23vh;
+  border-radius: 10px ;
+  border-bottom: 15px solid #000;
+  width:20vh;
+  box-shadow:1px 10px 25px rgba(0, 0, 0, 0.616);
+  /*background-color: rgb(88, 33, 160);*/
+  background-color: transparent;
+}
+.overmousecard
+{
+  background-color: rgb(88, 33, 160);
+}
+
+
+.colordiv
+{
+  background-color: rgb(22, 22, 22);
+  height: 10vh;
+  width: 10vh;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media (min-width: 1000px){
+  .c-direction-block_wrapper {
+    margin-top: 0vh !important;
+}
+}
+

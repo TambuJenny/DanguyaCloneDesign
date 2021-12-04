@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+    <link href="style/global.css" rel="stylesheet" />
+    <link href="style/Animation.css" rel="stylesheet" />
+    <script src="./js/script.js"></script>
+    <title>Document</title>
+
+  </head>
+  <body class=" bounce-top " id="js-scroll">
+    <header>
+      <button class="button-icon">
+        <img src="./icons/icons8_Nike_50px_2.png" alt="" />
+      </button>
+      <button class="button-icon">
+        <img src="./icons/icons8_Search_24px.png" alt="" />
+      </button>
+      <div class="direita">
+        <button class="button-icon">
+          <img src="./icons/icons8_Notification_24px.png" alt="" />
+        </button>
+        <button class="button-icon">
+          <img src="./icons/icons8_Shopping_Cart_24px.png" alt="" />
+        </button>
+      </div>
+    </header>
+    <div class="page" >
+      <main data-scroll-section>
+        <div class="menu-left">
+          <button class="button-icon">
+            <img
+              src="./icons/ativo 1.png"
+              style="max-width: 24px"
+              class=""
+              alt=""
+            />
+          </button>
+          <button class="button-icon">
+            <img src="./icons/icons8_Male_24px.png" class="" alt="" />
+          </button>
+          <button class="button-icon">
+            <img src="./icons/icons8_Female_24px.png" alt="" />
+          </button>
+          <button class="button-icon">
+            <img src="./icons/icons8_male_and_female_24px.png" alt="" />
+          </button>
+          <button class="button-icon">
+            <img src="./icons/icons8-gostar-24.png" alt="" />
+          </button>
+          <button class="button-icon">
+            <img src="./icons/icons8-linkedin-32.png" alt="" />
+          </button>
+        </div>
+      </main>
+
+      <aside data-scroll-section>
+        <div class="principal">
+          <div class="img-preco">
+            <img src="./img/PngItem_2129419.png" alt="" id="nikeshoose" />
+            <div class="img">
+              <p class="preco">Preço</p>
+              <h2 id='preco'>56.000 Kz</h2>
+              <br>
+              <p class="ante">
+                antes <label for="" class="nao">86.000kZ</label>
+              </p>
+            </div>
+          </div>
+          <div class="description">
+            <div class="title">
+              <h2>Nike Flywire</h2>
+            </div>
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Architecto veritatis deserunt dolore perspiciatis deleniti iure
+                possimus recusandae quam, reiciendis minus id! Explicabo,
+                aliquid ratione. 
+              </p>
+            </div>
+           
+            <div class="more" data-scroll>
+              <script>
+                var getclass = document.querySelector(".more");
+                listImg.forEach((dataimg) => {
+                  //alert(dataimg.img)
+
+                  getclass.innerHTML += `
+            <div class="divteste" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat>
+              <div class="imgsneaker" onmouseover="mouseEnterimgsmole(this.id)"  id='${
+                dataimg.id
+              }'>
+                <div class="imgcard">
+                  <img src="${dataimg.img}" class="imgproduto" alt="" id='${
+                    dataimg.img + dataimg.id
+                  }' data-scroll-repeat>
+                </div>
+              </div>
+            </div>
+            `;
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="divdown" data-scroll>
+          <div class="left" >
+            <div class="colordiv" id="violet" style="background-color: blueviolet;" onmouseenter="changeColor(this.id)"></div>
+            <div class="colordiv" id="yellow" style="background-color: rgb(255, 219, 15);" onmouseenter="changeColor(this.id)"></div>
+            <div class="colordiv" id="blue" style="background-color: rgb(0, 132, 255);"onmouseenter="changeColor(this.id)"></div>
+            <div class="colordiv" style="background-color: rgb(0, 0, 0);"></div>
+            <input type="number" class="numberClass" name="" id="" />
+            <button class="buttonClass">
+              <img src="./icons/icons8_Shopping_Cart_24px_2.png" alt="" />
+              Adicionar ao carrinho
+            </button>
+          </div>
+          <div class="rigth" data-scroll>
+            <button class="button-icon" >
+              <img src="./icons/icons8_Back_To_50px.png" alt="" />
+            </button>
+            <button class="button-icon">
+              <img src="./icons/icons8_Next_page_50px.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div class="video"  data-scroll-section>
+      <div class="video2" >
+        <div class="videotitle" data-scroll data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+          <h1 class="titleh1" >"Just do it"</h1>
+        </div>
+        <div class="videodiv" >
+          <video width="550" height="auto" controls>
+            <source
+              src="./img/JORDAN FAMILY DNA _ HERE FOR A REASON _ AIR JORDAN.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <img src="./icons/icons8_Nike_50px_1.png" alt="" srcset="" />
+         
+        </div>
+          <div class="lebrom" >
+            <div class="lebrom1" data-scroll data-scroll-offset="200">
+               <div class=""data-scroll data-scroll-delay="0.06" data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+                <h2> Make the diference</h2>
+               </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ullam autem corporis rem ipsam nesciunt nisi placeat earum rerum, dolor aliquam nulla, modi magni suscipit repellendus consequuntur facilis. Iusto, inventore.</p>
+                <button class="buttonClass" style="background-color:rgb(115, 7, 187);">
+                  <img src="./icons/icons8_Shopping_Cart_24px_2.png" alt="" />
+                 Ver produtos
+                </button>
+                <div class="smaltextdiv">
+                  <div class="plusdiv">
+                    <p>+</p>
+                    <p>+</p>
+                    <p>+</p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident maiores eaque ullam nihil</p>
+                </div>
+                
+            </div>
+            <div class="lebrom2" data-scroll data-scroll-delay="0.6" data-scroll-speed="2" >
+              <img src="./img/20713-9-lebron-james-picture.png" alt="">
+            </div>
+          </div> 
+      </div>
+    </div>
+    <div class="" data-scroll-section id="psg">
+      <div class="c-direction-block_wrapper">
+        <div class="c-direction-block" id="direction">
+          <div class="c-direction-block_item -one">
+              <span class="c-direction-block_item_inner" style="background-color:rgb(88, 33, 160);color:white ;" data-scroll data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-target="#direction">
+                você pode tornar seu sonho realidade
+              </span>
+          </div>
+          <div class="c-direction-block_item -two">
+              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-target="#direction">
+                Faz o mundo te conhecer 
+
+              </span>
+          </div>
+          <div class="c-direction-block_item -three">
+              <span class="c-direction-block_item_inner"style="background-color:rgb(88, 33, 160);color:white ;" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9" data-scroll-target="#direction" data-scroll-delay="0.05">
+                Ninguém pode te impedir ser o que queres ser.
+              </span>
+          </div>
+          <div class="c-direction-block_item -four">
+              <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal" data-scroll-speed="15" data-scroll-target="#direction">
+                Fizemos parte dos 3 %, sim !  Somos diferente 
+              </span>
+          </div>
+          <div class="c-direction-block_item -five">
+              <span class="c-direction-block_item_inner" style="background-color:rgb(88, 33, 160);color:white ;" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#direction" data-scroll-delay="0.05">
+                Apenas faça !!
+              </span>
+          </div>
+      </div>
+      </div>
+  </div>
+  <section class="cactus" data-scroll-section  >
+    <div >
+      <div class="cactusLogo" data-scroll>
+        <div class=""data-scroll-to>
+         <img src="./img/cactus-jack-logo-freelogovectors.net_.png" alt="">
+        </div>
+       </div>
+       <div class="imgsCactus"  data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+         <div class="">
+           <h5 id="preçocactus" data-scroll data-scroll-delay="0.06" data-scroll-speed="1"  data-scroll-repeat>150.000 kz </h5>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id fugit veniam rem commodi provident voluptas, blanditiis quo quibusdam perspiciatis voluptate, est dolore. Modi officia autem molestias natus aliquam vero.</p>
+           <button class="buttonClass" style="background-color:rgb(115, 7, 187);">
+             <img src="./icons/icons8_Shopping_Cart_24px_2.png" alt="" />
+            Ver produtos
+           </button>
+         </div>
+         <div class="cactusimg" data-scroll data-scroll-speed="-2">
+           <img src="./img/8733569_20200512-193559_1080x1068.jpg" alt="" srcset="">
+          <div class="namecactus">
+           <h5>Cactus Boy's</h5>
+          </div>
+         </div>
+       </div>
+       
+       <div class="imgsCactus" style=" border: 1px solid black"  data-scroll data-scroll-call="" data-scroll-repeat>
+         <div class="">
+           <h5 id="preçocactus" style="color:#222222" data-scroll data-scroll-delay="0.02" data-scroll-speed="1"  data-scroll-repeat>ABOUT CACTUS JACK  </h5>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id fugit veniam rem commodi provident voluptas, blanditiis quo quibusdam perspiciatis voluptate, est dolore. Modi officia autem molestias natus aliquam vero.</p>
+           <button class="buttonClass" style="background-color:rgb(115, 7, 187); ">
+             <img src="./icons/icons8_Shopping_Cart_24px_2.png" alt="" />
+            Ver produtos
+           </button>
+         </div>
+         <div class="cactusimg" data-scroll data-scroll-speed="-2">
+           <img src="./img/SCOTT2.png" alt="" srcset="">
+         
+         </div>
+       </div>
+    </div>
+   </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
